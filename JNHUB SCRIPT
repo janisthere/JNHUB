@@ -1,12 +1,180 @@
---[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.2.0) ~  Much Love, Ferib 
 
-]]--
 
-do local v0=tonumber;local v1=string.byte;local v2=string.char;local v3=string.sub;local v4=string.gsub;local v5=string.rep;local v6=table.concat;local v7=table.insert;local v8=math.ldexp;local v9=getfenv or function()return _ENV;end;local v10=setmetatable;local v11=pcall;local v12=select;local v13=unpack or table.unpack;local v14=tonumber;local function v15(v16,v17,...)local v18=1;local v19;v16=v4(v3(v16,5),"..",function(v30)if (v1(v30,2)==79) then v19=v0(v3(v30,1,1));return "";else local v75=v2(v0(v30,16));if v19 then local v87=v5(v75,v19);v19=nil;return v87;else return v75;end end end);local function v20(v31,v32,v33)if v33 then local v76=(v31/((2 + 0)^(v32-(1 -0))))%(2^(((v33-(1 -0)) -(v32-1)) + 1));return v76-(v76%(2 -(4 -3)));else local v77=((4 -1) -1)^(v32-(160 -(151 + (15 -7))));return (((v31%(v77 + v77))>=v77) and (3 -2)) or (0 + 0);end end local function v21()local v38=v1(v16,v18,v18);v18=v18 + 1;return v38;end local function v22()local v39,v40=v1(v16,v18,v18 + 2);v18=v18 + (7 -5);return (v40 * (701 -445)) + v39;end local function v23()local v41,v42,v43,v44=v1(v16,v18,v18 + (1654 -(1269 + 382)));v18=v18 + (37 -(28 + 5));return (v44 * ((17382377 + 49477761) -50082922)) + (v43 * (169382 -103846)) + (v42 * 256) + v41;end local function v24()local v45=v23();local v46=v23();local v47=1 + 0;local v48=(v20(v46,1 + 0,5 + 15) * (2^((593 -(371 + 152)) -(13 + 25)))) + v45;local v49=v20(v46,1380 -(75 + 1284),31 + 0);local v50=((v20(v46,109 -77)==(1124 -(273 + 850))) and  -1) or ((707 -(243 + 463)) + 0);if (v49==(0 + 0)) then if (v48==(0 + 0)) then return v50 * (0 + 0);else v49=1490 -((940 -(202 + 44)) + 795);v47=0 -0;end elseif (v49==2047) then return ((v48==(0 -0)) and (v50 * (1/(0 -0)))) or (v50 * NaN);end return v8(v50,v49-1023) * (v47 + (v48/((1 + 1)^(1910 -(1223 + 635)))));end local function v25(v34)local v51;if  not v34 then v34=v23();if (v34==(0 + 0)) then return "";end end v51=v3(v16,v18,(v18 + v34) -(1 -0));v18=v18 + v34;local v52={};for v63=1 + 0, #v51 do v52[v63]=v2(v1(v3(v51,v63,v63)));end return v6(v52);end local v26=v23;local function v27(...)return {...},v12("#",...);end local function v28()local v53={};local v54={};local v55={};local v56={v53,v54,nil,v55};local v57=v23();local v58={};for v65=1,v57 do local v66=v21();local v67;if (v66==(730 -(521 + 208))) then v67=v21()~=0;elseif (v66==(1 + 1)) then v67=v24();elseif (v66~=3) then else v67=v25();end v58[v65]=v67;end v56[1987 -(1393 + 591)]=v21();for v69=1,v23() do local v70=v21();if (v20(v70,1500 -(656 + 843),1)~=0) then else local v83=v20(v70,2,10 -7);local v84=v20(v70,475 -(14 + 457),7 -1);local v85={v22(),v22(),nil,nil};if (v83==0) then v85[9 -6]=v22();v85[4 + 0]=v22();elseif (v83==(1 + 0)) then v85[3]=v23();elseif (v83==2) then v85[1822 -(851 + 968)]=v23() -(2^16);elseif (v83==(1 + 2)) then v85[3]=v23() -((1247 -(258 + 987))^(528 -(292 + 220)));v85[4]=v22();end if (v20(v84,2 -1,1 -0)==1) then v85[2]=v58[v85[5 -3]];end if (v20(v84,1 + 1,2)==(1270 -(654 + 615))) then v85[212 -(57 + 152)]=v58[v85[3]];end if (v20(v84,697 -(327 + 367),2 + 1)~=(1 -0)) then else v85[1 + 3]=v58[v85[4]];end v53[v69]=v85;end end for v71=1,v23() do v54[v71-(825 -(190 + 634))]=v28();end for v73=1,v23() do v55[v73]=v23();end return v56;end local function v29(v35,v36,v37)local v60=v35[1];local v61=v35[2];local v62=v35[3];return function(...)local v78=1;local v79= -1;local v80={...};local v81=v12("#",...) -1;local function v82()local v88=v60;local v89=v61;local v90=v62;local v91=v27;local v92={};local v93={};local v94={};for v107=1428 -(216 + (2888 -1676)),v81 do if ((v107>=v90) or ((619 -(24 + 337))==(2105 -(1015 + 229)))) then v92[v107-v90]=v80[v107 + 1 + 0];else v94[v107]=v80[v107 + (2 -1)];end end local v95=(v81-v90) + (2 -1);local v96;local v97;while true do v96=v88[v78];v97=v96[(5132 -3195) -(1884 + 52)];if ((v97<=((361 -(288 + 71)) -0)) or ((8955 -5739)<(2333 -(214 + 282)))) then if (((10360 -5540)>((5178 -(430 + 337)) -(990 + 59))) and (v97<=((1944 -(443 + 1204)) -(52 + 245)))) then v94[v96[5 -3]]=v37[v96[3 -0]];elseif (((3289 -(266 + 1330 + 305))==(633 + 755)) and (v97>(1 -0))) then v94[v96[2 + 0]]=v96[1392 -(511 + 878)];else local v122=v96[2 + 0];v94[v122]=v94[v122](v13(v94,v122 + (1565 -(1263 + 301)),v79));end elseif ((v97<=(527 -(330 + 193))) or ((6271 -4389)<(3159 -1585))) then if ((v97==(12 -9)) or ((13364 -9136)==(8934 -4913))) then v94[v96[1 + 1]]();else do return;end end elseif ((v97==(6 -1)) or ((1909 + 823)<=(4560 -2078))) then local v124=v96[1 + 1];local v125,v126=v91(v94[v124](v13(v94,v124 + 1 + 0 + 0,v96[5 -2])));v79=(v126 + v124) -((1 -0) + 0);local v127=0 + 0;for v133=v124,v79 do v127=v127 + (414 -(330 + 83));v94[v133]=v125[v127];end else local v128=v96[(351 -(113 + 234)) -2];local v129=v94[v96[1892 -(1129 + 760)]];v94[v128 + (4 -3)]=v129;v94[v128]=v129[v96[1 + 1 + 2]];end v78=v78 + (392 -(1 + 15 + 375));end end A,B=v27(v11(v82));if  not A[1] then local v98=v35[4][v78] or "?";error("Script error at ["   .. v98   .. "]:"   .. A[2]);else return v13(A,2,B);end end;end return v29(v28(),{},v17)(...);end v15("LOL!043O00030A3O006C6F6164737472696E6703043O0067616D6503073O00482O747047657403463O00682O7470733A2O2F7261772E67697468756275736572636F6E74656E742E636F6D2F6A616E697374686572652F4A4E4855422F6D61696E2F4A4E48554225323053435249505400083O00124O00013O00122O000100023O002006000100010003001202000300044O0005000100034O00015O00022O00033O000100012O00043O00017O00083O00023O00023O00023O00023O00023O00023O00023O00033O00",v9(),...);end
+-- MAIN
+
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({JNHUB = "Title of the library", HidePremium = false, SaveConfig = false, ConfigFolder = "OrionUi", IntroText = ("JNHUB"), Name = ("JNHUB")})
+
+
+--Anomic
+
+-- TAB1
+local Tab = Window:MakeTab({
+	Name = "Anomic",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- Section1
+local Section = Tab:AddSection({
+	Name = "GUIs"
+})
+
+
+--Button1
+Tab:AddButton({
+	Name = "Gruizzy GUI",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GuizzyisbackV2LOL/AnomicGui.lua/main/LuaSource"))()
+      		print("button pressed")
+  	end    
+}) 
+
+--Button12
+Tab:AddButton({
+	Name = "ScriptX GUI",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptXHub/DiscordHiReplyBot-OLD-DOESNT-WORK-broken-/main/jjsongcatch"))()
+      		print("button pressed")
+  	end    
+})
+
+
+
+
+-- TheSurvivalGame
+
+
+-- TAB2
+local Tab = Window:MakeTab({
+	Name = "The Survival Game",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+-- Section2
+local Section = Tab:AddSection({
+	Name = "GUIs"
+})
+
+--Button2
+Tab:AddButton({
+	Name = "TSG Lua",
+	Callback = function()
+    loadstring(game:HttpGet("https://github.com/joeengo/exploiting/blob/main/tsg.lua?raw=true", true))()
+      		print("button pressed")
+  	end    
+})
+
+
+
+-- Tab3
+local Tab = Window:MakeTab({
+	Name = "The Wild West",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) 
+
+
+
+-- Section3
+local Section = Tab:AddSection({
+	Name = "GUIs"
+})
+
+
+
+--Button3
+Tab:AddButton({
+	Name = "Wild West GUI",
+	Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/xPpmpCcV"))()
+      		print("button pressed")
+  	end    
+})
+
+
+
+
+-- Bloxburg
+
+-- TAB1
+local Tab = Window:MakeTab({
+	Name = "Bloxburg",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- Section1
+local Section = Tab:AddSection({
+	Name = "GUIs"
+})
+
+
+--Button1
+Tab:AddButton({
+	Name = "ScarHub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/PainfulDestroyer/Roblox/main/Scar%20Hub"))()
+      		print("button pressed")
+  	end}) 
+
+
+
+-- JailBreak
+
+-- TAB1
+local Tab = Window:MakeTab({
+	Name = "Jailbreak",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- Section1
+local Section = Tab:AddSection({
+	Name = "GUIs"
+})
+
+
+--Button1
+Tab:AddButton({
+	Name = "JailMonkey",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/JailMonkey.lua"))()
+      		print("button pressed")
+  	end}) 
+
+
+-- Da Hood
+
+-- TAB1
+local Tab = Window:MakeTab({
+	Name = "DaHood",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- Section1
+local Section = Tab:AddSection({
+	Name = "GUIs"
+})
+
+
+--Button1
+Tab:AddButton({
+	Name = "Pluto",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Scrvpter/Pluto/Lua/Loader.Lua', true))()      
+	print("button pressed")
+  	end}) 
+
+
+-- NOTIS
+OrionLib:MakeNotification({
+	Name = "Script Run",
+	Content = "Script Enabled",
+	Image = "rbxassetid://4483345998",
+	Time = 4
+})
