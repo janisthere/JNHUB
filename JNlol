@@ -1,0 +1,180 @@
+
+
+-- MAIN
+
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({JNHUB = "Title of the library", HidePremium = false, SaveConfig = false, ConfigFolder = "OrionUi", IntroText = ("JNHUB"), Name = ("JNHUB")})
+
+
+--Anomic
+
+-- TAB1
+local Tab = Window:MakeTab({
+	Name = "Anomic",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- Section1
+local Section = Tab:AddSection({
+	Name = "GUIs"
+})
+
+
+--Button1
+Tab:AddButton({
+	Name = "Gruizzy GUI",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GuizzyisbackV2LOL/AnomicGui.lua/main/LuaSource"))()
+      		print("button pressed")
+  	end    
+}) 
+
+--Button12
+Tab:AddButton({
+	Name = "ScriptX GUI",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptXHub/DiscordHiReplyBot-OLD-DOESNT-WORK-broken-/main/jjsongcatch"))()
+      		print("button pressed")
+  	end    
+})
+
+
+
+
+-- TheSurvivalGame
+
+
+-- TAB2
+local Tab = Window:MakeTab({
+	Name = "The Survival Game",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+-- Section2
+local Section = Tab:AddSection({
+	Name = "GUIs"
+})
+
+--Button2
+Tab:AddButton({
+	Name = "TSG Lua",
+	Callback = function()
+    loadstring(game:HttpGet("https://github.com/joeengo/exploiting/blob/main/tsg.lua?raw=true", true))()
+      		print("button pressed")
+  	end    
+})
+
+
+
+-- Tab3
+local Tab = Window:MakeTab({
+	Name = "The Wild West",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) 
+
+
+
+-- Section3
+local Section = Tab:AddSection({
+	Name = "GUIs"
+})
+
+
+
+--Button3
+Tab:AddButton({
+	Name = "Wild West GUI",
+	Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/xPpmpCcV"))()
+      		print("button pressed")
+  	end    
+})
+
+
+
+
+-- Bloxburg
+
+-- TAB1
+local Tab = Window:MakeTab({
+	Name = "Bloxburg",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- Section1
+local Section = Tab:AddSection({
+	Name = "GUIs"
+})
+
+
+--Button1
+Tab:AddButton({
+	Name = "ScarHub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/PainfulDestroyer/Roblox/main/Scar%20Hub"))()
+      		print("button pressed")
+  	end}) 
+
+
+
+-- JailBreak
+
+-- TAB1
+local Tab = Window:MakeTab({
+	Name = "Jailbreak",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- Section1
+local Section = Tab:AddSection({
+	Name = "GUIs"
+})
+
+
+--Button1
+Tab:AddButton({
+	Name = "JailMonkey",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/JailMonkey.lua"))()
+      		print("button pressed")
+  	end}) 
+
+
+-- Da Hood
+
+-- TAB1
+local Tab = Window:MakeTab({
+	Name = "DaHood",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- Section1
+local Section = Tab:AddSection({
+	Name = "GUIs"
+})
+
+
+--Button1
+Tab:AddButton({
+	Name = "Pluto",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Scrvpter/Pluto/Lua/Loader.Lua', true))()      
+	print("button pressed")
+  	end}) 
+
+
+-- NOTIS
+OrionLib:MakeNotification({
+	Name = "Script Run",
+	Content = "Script Enabled",
+	Image = "rbxassetid://4483345998",
+	Time = 4
+})
